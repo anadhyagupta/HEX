@@ -8,7 +8,7 @@
         body {
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #FEFBE3, #fceabb);
+            background: #fefbe3;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             align-items: center;
@@ -19,7 +19,7 @@
         }
         
         .game-container {
-            background: #ffffff;
+            background: #ffd152;
             border-radius: 16px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
             padding: 20px 30px;
@@ -54,7 +54,7 @@
         canvas {
             border: 2px solid #ccc;
             border-radius: 12px;
-            background: #ffffff;
+            background: #fefbe3;
             display: block;
             margin-top: 10px;
         }
@@ -69,7 +69,7 @@
         #restartBtn {
             margin-top: 15px;
             padding: 10px 20px;
-            background-color: #f0c420;
+            background-color: #fe9a04;
             border: none;
             border-radius: 6px;
             font-size: 16px;
@@ -78,7 +78,7 @@
         }
         
         #restartBtn:hover {
-            background-color: #e6b800;
+            background-color: #ffaf38;
         }
         
         #player-indicator {
@@ -225,7 +225,7 @@
         <button id="restartBtn">Restart Game</button>
 
         <div id="winnerModal">
-            <h2><span class="highlight" id="winnerName"></span> wins the game!</h2>
+            <h2><span class="highlight" id="winnerName"></span> Wins the game!</h2>
         </div>
     </div>
 
@@ -288,7 +288,7 @@
                     i === 0 ? ctx.moveTo(px, py) : ctx.lineTo(px, py);
                 }
                 ctx.closePath();
-                ctx.fillStyle = this.color || '#FEF494';
+                ctx.fillStyle = this.color || '#FCF6AB';
                 ctx.fill();
                 ctx.strokeStyle = '#666';
                 ctx.lineWidth = 1;
